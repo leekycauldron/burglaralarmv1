@@ -34,6 +34,7 @@ void alert_buzz() {
       tone(buzzer, i);
       delay(10);
     }
+
   noTone(buzzer);
 }
 
@@ -43,3 +44,11 @@ bool getMotion() {
   return digitalRead(sensor) == HIGH;
 }
 
+// Strobe the lamp every 500ms.
+
+void strobe_lamp() {
+  if(millis() - last >= 1000) {
+    last = millis();
+    mqttClient.publish(TOPIC,"lamp");
+  }
+}
