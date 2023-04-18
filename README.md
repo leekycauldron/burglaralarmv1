@@ -11,14 +11,14 @@ This repo has two branches:
 
 
 ## Main files
-burglaralarmv1.ino - main code that will run
-arduino_out.ino - code with functions that will control the external components (sensor, LED, buzzer)
+- burglaralarmv1.ino - main code that will run
+- arduino_out.ino - code with functions that will control the external components (sensor, LED, buzzer)
 
 
 ## net files
 
-burglaralarmv1.ino - main code that will run
-arduino_out.ino - code with functions that will control the external components (sensor, LED, buzzer)
-arduino_network.ino - code that connects to WiFi/MQTT
-arduino_secrets.h - a template file for storing credentials required for MQTT and WiFi
-main.py - a code snippet of my server that acts as a middleman between the Arduino and the Phillips Hue light
+- burglaralarmv1.ino - main code that will run
+- arduino_out.ino - code with functions that will control the external components (sensor, LED, buzzer)
+- arduino_network.ino - code that connects to WiFi/MQTT
+- arduino_secrets.h - a template file for storing credentials required for MQTT and WiFi
+- main.py - a code snippet of my server that acts as a middleman between the Arduino and the Phillips Hue light
